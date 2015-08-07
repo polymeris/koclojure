@@ -1,0 +1,4 @@
+content clojurelanguage content/
+skin clojurelanguage classic/1.0 skin/
+locale clojurelanguage en-US locale/en-US/
+
