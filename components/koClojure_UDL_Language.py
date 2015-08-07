@@ -39,3 +39,12 @@ class KoClojureLanguage(KoUDLLanguage):
     supportsSmartIndent = "brace"
 
     lang_from_udl_family = {'SSL': 'Clojure'}
+
+    searchURL = "https://clojuredocs.org/search?q=%W"
+
+    sample = """; From wikibooks
+(defn words [text] (re-seq #"[a-z]+" (.toLowerCase text)))
+(defn train [features]
+  (reduce (fn [model f] (assoc model f (inc (get model f 1)))) {} features))
+(def *nwords* (train (words (slurp "big.txt"))))
+"""
